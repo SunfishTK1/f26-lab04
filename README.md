@@ -48,3 +48,9 @@ explain what got created, deploy the broken variant and diagnose it, tear it dow
 CI is configured in `.github/workflows/ci.yml`. Every push runs the service tests and
 builds the container image. GitHub disables workflows on a fresh fork, so enable
 them from the Actions tab if it asks.
+
+## AI tools used
+
+Claude Code (CLI) with the Claude Fable 5.1 model, used to read `infra/template.yaml`
+with me, run the deploy/diagnose/teardown commands, and draft the writeup in
+`DEPLOYMENT.md`.
